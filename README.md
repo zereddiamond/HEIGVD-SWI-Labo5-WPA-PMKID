@@ -61,7 +61,27 @@ Un fork du repo original . Puis, un Pull Request contenant **vos noms** et :
 
 - Script ```pmkid_attack.py``` **abondamment commenté/documenté** + fichier wordlist
    - Capture d’écran de votre script en action
+   > Ci-dessous une capture d'écran du script après les modifications à la tâche 1 et 2 : 
+   >
+   > ![Capture task2](./files/task2.png)
+   >
+   > le fichier `wordlist` est disponible [ici](./files/wordlist.txt).
+
 - Captures d'écran de votre exercice 3
+   > Il n'était pas nécessaire d'effectuer la première commande (`hcxdumptool`), un fichier `pcap` était déjà disponible.
+   >
+   > Ci-dessous la capture de la commande `hcxpcaptool` : 
+   >
+   > ![Capture task3 1](./files/task3_1.png)
+   >
+   > La commande suivante a été utilisée : `hcxpcaptool -z handshake.txt PMKID_handshake.pcap`
+   >
+   > Ci-dessous une capture d'écran de la dernière commande : 
+   >
+   > ![Capture task3 2](./files/task3_2.png)
+   >
+   > La commande suivante a été utilisé : `hashcat -m 16800 handshake.txt -a 0 --force 'wordlist.txt'` et reprend le fichier `wordlist` à l'étape 2.
+
 -	Envoyer le hash du commit et votre username GitHub et **les noms des participants** par email au professeur et à l'assistant
 
 
